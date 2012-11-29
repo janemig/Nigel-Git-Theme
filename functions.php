@@ -566,15 +566,13 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
 }
 
 
-
-
-//Custom Image Gallery code 
+//Custom Image Gallery
 
 //This line stops the theme from using wp-includes/media.php
 remove_shortcode('gallery');
 
 //This code below adds your own custom theme
-add_shortcode('gallery', 'my_gallery_shortcode');
+add_shortcode('gallery', 'eric_gallery_shortcode');
 
 /**
  * The Gallery shortcode.
@@ -587,7 +585,7 @@ add_shortcode('gallery', 'my_gallery_shortcode');
  * @param array $attr Attributes of the shortcode.
  * @return string HTML content to display gallery.
  */
-function my_gallery_shortcode($attr) {
+function eric_gallery_shortcode($attr) {
 	global $post;
 
 
@@ -664,6 +662,7 @@ function my_gallery_shortcode($attr) {
 
 	return $output;
 }
+
 
 
 

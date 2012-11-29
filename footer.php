@@ -16,6 +16,10 @@
 	</div>
 	<!-- /Wrapper -->
 	
+	<script type="text/javascript">
+	Shadowbox.init();
+	</script>
+	
 	<?php wp_footer(); ?>
 	
 </body>

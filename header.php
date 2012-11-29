@@ -16,11 +16,15 @@
 	
 	<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 	
+	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/js/shadowbox/shadowbox.css">
+	
 	<!-- Link to Typekit fonts -->
 	<script type="text/javascript" src="//use.typekit.net/stg8wtu.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 		
 	<!-- CSS + jQuery + JavaScript -->
+	
+	
 	<?php wp_head(); ?>
 	
 </head>
