@@ -648,7 +648,7 @@ function eric_gallery_shortcode($attr) {
 		
 	
 		
-		$output .= "<a href='" . $img_src_full[0] . "' rel='shadowbox'><img src='" . $img_src[0] . "' /></a>";
+		$output .= "<a href='" . $img_src_full[0] . "' rel='shadowbox[gallery]'><img src='" . $img_src[0] . "' /></a>";
 		
 		// $output .= "<img src='" . $img_src[0] . "' />";
 		
