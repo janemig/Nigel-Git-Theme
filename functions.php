@@ -645,10 +645,13 @@ function eric_gallery_shortcode($attr) {
 		
 		$img_src = wp_get_attachment_image_src($id, $size);
 		$img_src_full = wp_get_attachment_image_src($id, "full");
-		
 	
+		$data = wp_get_attachment( $id );
 		
-		$output .= "<a href='" . $img_src_full[0] . "' rel='shadowbox[gallery]'><img src='" . $img_src[0] . "' /></a>";
+		// echo wp_get_attachment_image( 1 );
+		
+		
+		$output .= "<a href='" . $img_src_full[0] . "' rel='shadowbox[gallery]' title='" . $data[title] . "'><img src='" . $img_src[0] . "' /></a>";
 		
 		// $output .= "<img src='" . $img_src[0] . "' />";
 		
@@ -748,5 +751,20 @@ function my_taxonomies_photoset() {
 }
 add_action( 'init', 'my_taxonomies_photoset', 0 );
 
+// Custom image attachment function
+// http://wordpress.org/extend/ideas/topic/functions-to-get-an-attachments-caption-title-alt-description
+
+function wp_get_attachment( $attachment_id ) {
+
+	$attachment = get_post( $attachment_id );
+	return array(
+		'alt' => get_post_meta( $attachment->ID, '_wp_attachment_image_alt', true ),
+		'caption' => $attachment->post_excerpt,
+		'description' => $attachment->post_content,
+		'href' => get_permalink( $attachment->ID ),
+		'src' => $attachment->guid,
+		'title' => $attachment->post_title
+	);
+}
 
 
