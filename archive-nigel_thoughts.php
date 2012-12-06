@@ -7,7 +7,7 @@
 	
 		<?php get_template_part('loop'); ?>
 		
-		<h6>archive-nigel_thoughts.php</h6>
+		<h6>archive-nigel_thoughts.php yep</h6>
 		
 		<!-- Pagination -->
 		<div id="pagination">

@@ -3,7 +3,7 @@
 	<!-- Section -->
 	<section>
 		
-		<h6>page.php</h6>
+		<!-- <h6>page.php</h6> -->
 		
 		<h1><?php the_title(); ?></h1>
 	

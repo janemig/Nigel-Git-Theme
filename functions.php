@@ -464,7 +464,7 @@ add_shortcode('html5_shortcode_demo_2', 'html5_shortcode_demo_2'); // Place [htm
  * ========================================================================
  */
 
-// Create 1 Custom Post type for a Demo, called Friends
+// Create Custom Post type for Friends
 function create_post_type_html5()
 {
     register_taxonomy_for_object_type('category', 'Friends'); // Register Taxonomies for Category
@@ -501,29 +501,27 @@ function create_post_type_html5()
             'category'
         ) // Add Category and Post Tags support
     ));
-}
+	//end custom post type for friends
 
+// Create Custom Post type for Nigel Thoughts
 
-// Create 1 Custom Post type called Nigel Thoughts
-
-{
-    register_taxonomy_for_object_type('category', 'Nigel Thoughts'); // Register Taxonomies for Category
+    register_taxonomy_for_object_type('category', 'Nigel_Thoughts'); // Register Taxonomies for Category
     register_taxonomy_for_object_type('post_tag', 'nigel_thoughts');
     register_post_type('nigel_thoughts', // Register Custom Post Type
         array(
         'labels' => array(
-            'name' => __('Nigel Thoughts'), // Rename these to suit
-            'singular_name' => __('Nigel Thought'),
-            'add_new' => __('Add New'),
-            'add_new_item' => __('Add New Nigel Thoughts'),
-            'edit' => __('Edit'),
-            'edit_item' => __('Edit Nigel Thoughts'),
-            'new_item' => __('New Nigel Thoughts'),
-            'view' => __('View Nigel Thoughts'),
-            'view_item' => __('View Nigel Thoughts'),
-            'search_items' => __('Search Nigel Thoughts'),
-            'not_found' => __('No Nigel Thoughts found'),
-            'not_found_in_trash' => __('No Nigel Thoughts found in Trash'),
+            'name' => __('Nigel Thoughts', 'nigel_thoughts'), // Rename these to suit
+            'singular_name' => __('Nigel Thought', 'html5blank'),
+            'add_new' => __('Add New', 'html5blank'),
+            'add_new_item' => __('Add New Nigel Thoughts', 'html5blank'),
+            'edit' => __('Edit', 'html5blank'),
+            'edit_item' => __('Edit Nigel Thoughts', 'html5blank'),
+            'new_item' => __('New Nigel Thoughts', 'html5blank'),
+            'view' => __('View Nigel Thoughts', 'html5blank'),
+            'view_item' => __('View Nigel Thoughts', 'html5blank'),
+            'search_items' => __('Search Nigel Thoughts', 'html5blank'),
+            'not_found' => __('No Nigel Thoughts found', 'html5blank'),
+            'not_found_in_trash' => __('No Nigel Thoughts found in Trash', 'html5blank'),
         ),
         'public' => true,
         'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
@@ -542,7 +540,7 @@ function create_post_type_html5()
         ) // Add Category and Post Tags support
     ));
 }
-// End Custom Post type called Nigel Thoughts
+// End Custom Post type for Nigel Thoughts
 
 
 

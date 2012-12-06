@@ -1,3 +1,6 @@
+/* @override 
+	http://localhost:8888/wp-content/themes/Nigel-Git-Theme/style.css?ver=1.0 */
+
 /*
 Theme Name: Nigel Git Theme
 Theme URI:http://imnigel.com
@@ -320,51 +323,17 @@ header {
 nav {
 	width: 62%;
 	float: right;
-	margin: 14px 28px 0 0;
-		
+	margin: 14px 28px 0 0;		
+}
+nav ul {
+	list-style-type: none;
 }
 nav li {
 	float: right;
 }
-nav #menu-item-264 a {
-	background-image: url(img/aqua-circle.png);
-	background-repeat: no-repeat;
-	background-size: 97%;
-	transition: all .3s ease-in-out;
-	-moz-transition: all .3s ease-in-out;
-	-webkit-transition: all .3s ease-in-out; 
-	-o-transition: all .3s ease-in-out;	
-}
-nav #menu-item-58 a {
-	background-image: url(img/yellow-circle.png);
-	background-repeat: no-repeat;
-	background-size: 97%;
-	transition: all .3s ease-in-out;
-	-moz-transition: all .3s ease-in-out;
-	-webkit-transition: all .3s ease-in-out; 
-	-o-transition: all .3s ease-in-out;
-	
-}
-nav #menu-item-262 a {
-	background-image: url(img/fuschia-circle.png);
-	background-repeat: no-repeat;
-	background-size: 97%;
-	transition: all .3s ease-in-out;
-	-moz-transition: all .3s ease-in-out;
-	-webkit-transition: all .3s ease-in-out; 
-	-o-transition: all .3s ease-in-out;
-	
-}
-nav #menu-item-258 a {
-	background-image: url(img/green-circle.png);
-	background-repeat: no-repeat;
-	background-size: 97%;
-	transition: all .3s ease-in-out;
-	-moz-transition: all .3s ease-in-out;
-	-webkit-transition: all .3s ease-in-out; 
-	-o-transition: all .3s ease-in-out;
-}
 nav li a {
+	background-size: 97%;
+	background-repeat: no-repeat;
 	font-family: "adelle",serif;
 	font-weight: normal;
 	font-weight: 500;
@@ -378,6 +347,22 @@ nav li a {
 	text-decoration: none;
 	opacity: 0.8;
 	font-size: 85%;
+	transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out; 
+	-o-transition: all .3s ease-in-out;	
+}
+.aquacircle a {
+	background-image: url(img/aqua-circle.png);
+}
+.yellowcircle a {
+	background-image: url(img/yellow-circle.png);
+}
+.fuschiacircle a {
+	background-image: url(img/fuschia-circle.png);
+}
+.greencircle a {
+	background-image: url(img/green-circle.png);
 }
 nav li a:hover {
 	opacity: 0.9;
